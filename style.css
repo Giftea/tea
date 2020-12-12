@@ -11,7 +11,7 @@ body{
    
  
    
-
+    width: 100vw;
     
     overflow-x: hidden;
 }
@@ -89,6 +89,7 @@ opacity: 50%;
     @media screen and (max-width:450px){
         .cup {
             height: 100px;
+            width:60%;
         }
 
        .containerr .saucer{
@@ -98,10 +99,6 @@ opacity: 50%;
 
         .top .circle{
             height: 40px;
-        }
-
-        .containerr .cup{
-            width:60%;
         }
 
         .empty{
