@@ -22,14 +22,27 @@ nav{
     
 }
 
+nav .brand-logo{
+    font-size: 1.5rem;
+}
+
 .hero{
     background-color: rgba(3, 3, 49, 0.788);
-    min-height: 100vh;
+    min-height: 80vh;
 }
 
 .empty{
     content: " ";
-    height: 50px;
+    height: 150px;
+}
+
+.hero-text{
+    position: absolute;
+    top: 100;
+}
+
+h4{
+    color: darkkhaki;
 }
 
 
@@ -49,7 +62,7 @@ nav{
     position: relative;
     top: 50px;
 right: 20px;
-opacity: 50%;
+opacity: 30%;
 
 }
 
@@ -71,6 +84,21 @@ opacity: 50%;
         border-bottom-left-radius:40% ;
         border-bottom-right-radius:40% ;
 
+    }
+
+    @media screen and (max-width:450px){
+        .cup {
+            height: 100px;
+        }
+
+       .containerr .saucer{
+        bottom: -30px;
+
+        }
+
+        .top .circle{
+            height: 40px;
+        }
     }
 
     .top
