@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* display: flex;
+    justify-content: flex-end;
+    align-items: center; */
+   
+ 
+   
+
+    
+    overflow-x: hidden;
+}
+
+
+nav{
+    background-color: rgba(3, 3, 49, 0.788);
+    
+}
+
+.hero{
+    background-color: rgba(3, 3, 49, 0.788);
+    min-height: 100vh;
+}
+
+.empty{
+    content: " ";
+    height: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.containerr{
+    position: relative;
+    top: 50px;
+right: 20px;
+opacity: 50%;
+
+}
+
+    .cup{
+        position:relative ;
+        z-index: 0;
+        /* width: 280px;
+        height:300px; */
+        /* width: 250px;
+        height:200px; */
+        width: 50%;
+        height:150px;
+        right: -20%;
+        /* background-color: rgb(248, 236, 236); */
+        background:linear-gradient(to right, #f9f9f9, #d9d9d9) ;
+
+        /* border-bottom-left-radius:45% ;
+        border-bottom-right-radius:45% ; */
+        border-bottom-left-radius:40% ;
+        border-bottom-right-radius:40% ;
+
+    }
+
+    .top
+    {
+        position: absolute;
+        top: -30px;
+        background:linear-gradient(to right, #f9f9f9, #d9d9d9) ;
+        height: 60px;
+        left: 0;
+        width: 100%;
+        border-radius: 50%;
+    }
+
+    .circle{
+        position: absolute;
+        top: 5px;
+        left: 10px;
+        background:linear-gradient(to left, #f9f9f9, #d9d9d9) ;
+        width: calc(100% - 20px);
+        height: 50px;
+        border-radius: 50%;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .tea{
+        position: absolute;
+        top: 20px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background:linear-gradient( #c57e65, #e28462) ;
+        border-radius: 50%;
+        
+    }
+    .handle{
+        /* position: absolute;
+        top: 40px;
+        right: -70px;
+        width: 160px;
+        height: 180px;
+        border: 25px solid #000; */
+
+        /* border: 25px solid #d9d9d9; */
+        /* border-left: 25px solid transparent;
+        border-bottom: 25px solid transparent; */
+        /* border-left: 25px solid;
+        border-bottom: 25px solid ;
+        border-radius: 50%;
+        transform: rotate(42deg); */
+        position: absolute;
+    top: 30px;
+    right: -40px;
+    width: 90px;
+    height: 110px;
+    border: 25px solid #000;
+    border: 25px solid #d9d9d9;
+
+    border-left: 25px solid;
+    border-bottom: 25px solid;
+    border-radius: 50%;
+    transform: rotate(38deg);
+     border-left: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+
+
+
+    }
+
+    .saucer{
+        position: absolute ;
+        /* bottom: -50px; */
+        bottom: -40px;
+
+        left: 50%;
+        transform: translateX(-50%);
+        /* width: 450px;
+        height: 200px; */
+          width: 100%;
+        /* height: 150px; */
+         height: 70%; 
+
+        background:linear-gradient(to right, #f9f9f9, #d9d9d9) ;
+        border-radius: 50%;
+        box-shadow: 0 35px 35px rgba(0,0,0,0.2);
+    }
+
+    .saucer::before{
+        content: " ";
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+        border-radius: 50%;
+        background:linear-gradient(to left, #f9f9f9, #d9d9d9) ;    
+    }
+
+    .saucer::after{
+        content: " ";
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        right: 30px;
+        bottom: 30px;
+        border-radius: 50%;
+        background:radial-gradient(rgba(0,0,0,0.2)25%, transparent, transparent) ;    
+
+    }
+
+    .vapour{
+        position: relative;
+        display: flex;
+        z-index: 1;
+        padding: 0 20px;
+    }
+
+    .vapour span{
+        position: relative;
+        bottom: 50px;
+        display: block;
+        margin: 0 2px 50px;
+        min-width: 8px;
+        height: 120px;
+        background-color: #fff;
+        border-radius: 50%;
+        animation:vapor 5s linear infinite;
+        filter: blur(8px);
+        animation-delay: calc(var(--i) * -0.5s);
+
+    }
+
+    @keyframes vapor{
+        0%{
+            transform: translateY(0) scaleX(1);
+            opacity: 0;
+        }
+
+        15%{
+            opacity: 1;
+        }
+
+
+        50%{
+            transform: translateY(-150px) scaleX(5);
+            opacity: 0;
+
+
+        }
+
+        100%{
+            transform: translateY(-300px) scaleX(10);
+            opacity: 0;
+
+        }
+    }
+    
